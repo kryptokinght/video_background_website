@@ -1,0 +1,15 @@
+alert("Page loaded");
+    	console.log("Is it working??");
+    	$("button").hide(); 
+		//var myAudio = document.getElementById("myAudio");
+		$("button").on("click",funtion(){
+			if (myAudio.paused) {
+				this.text("Pause");
+			    myAudio.play();
+			} 
+
+			/*else {
+				$("button").text("Paused");
+			    myAudio.pause();
+    		}*/
+		});

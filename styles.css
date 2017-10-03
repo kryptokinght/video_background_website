@@ -1,0 +1,44 @@
+body {
+  margin: 0;
+  background: #000; 
+  max-height: 100%;
+  max-width: 100%;
+}
+
+#video-background {
+/*  making the video fullscreen  */
+  position: fixed;
+  right: 0%; 
+  bottom: 0%;
+  top: 0;
+  min-width: 100%; 
+  min-height: 100%;
+  width: auto; 
+  height: auto;
+  z-index: -100;
+  transition: 1s opacity;
+}
+.jumbotron {
+  width:50%;
+  margin:160px auto;
+  color: rgb(150,150,150);
+  background: rgba(0,0,0,0.5);
+}
+button { 
+  display:block;
+  width: 150px;
+  padding: .4rem;
+  border: none; 
+  margin: auto;
+  font-size: 1.3rem;
+  background: rgba(255,255,255,0.23);
+  color: #fff;
+  cursor: pointer;
+  transition: .3s background;
+}
+.button-paused {
+  opacity: .5;
+}
+button:hover { 
+   background: rgba(0,0,0,0.5);
+}
